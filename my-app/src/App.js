@@ -6,6 +6,7 @@ import {UserData} from './Data'
 import { LineChart } from './components/LineChart';
 import { PieChart } from './components/PieChart';
 
+
 function App() {
 
   const [userData, setUserData] = useState({
@@ -13,7 +14,7 @@ function App() {
     datasets: [{
       label: "Users Gained",
       data: UserData.map((data) => data.userGain),
-      backgroundColor: ["purple", "green"],
+      backgroundColor: ["green", "blue"],
       borderColor: "black",
       borderWidth: 2
     }],
